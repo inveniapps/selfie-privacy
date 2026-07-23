@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-en="Privacy Policy — Inveni Selfie" data-pt="Política de Privacidade — Inveni Selfie">Política de Privacidade — Inveni Selfie</title>
+<meta name="description" data-en="Privacy policy for the Inveni Selfie app. Your photos stay on your device." data-pt="Política de privacidade do app Inveni Selfie. Suas fotos ficam no seu aparelho.">
+<style>
+  :root {
+    --cream: #FDF6E9;
+    --cream-deep: #F2E7D3;
+    --amber: #B45309;
+    --amber-deep: #8C3F06;
+    --ink: #3A2E1F;
+    --ink-soft: #7C6A52;
+    --max: 42rem;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    padding: 0 1.25rem 4rem;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .wrap { max-width: var(--max); margin: 0 auto; }
+
+  header {
+    padding: 2.5rem 0 1.5rem;
+    border-bottom: 1px solid var(--cream-deep);
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.75rem;
+  }
+
+  .brand {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--amber);
+  }
+
+  .lang {
+    display: inline-flex;
+    border: 1px solid var(--cream-deep);
+    border-radius: 999px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .lang button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+  }
+
+  .lang button[aria-pressed="true"] {
+    background: var(--amber);
+    color: #fff;
+  }
+
+  .lang button:focus-visible {
+    outline: 2px solid var(--amber-deep);
+    outline-offset: -2px;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.4rem;
+  }
+
+  .updated {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  .summary {
+    background: var(--cream-deep);
+    border-radius: 16px;
+    padding: 1.25rem 1.4rem;
+    margin: 2rem 0 2.5rem;
+  }
+
+  .summary p:first-child {
+    margin-top: 0;
+    font-weight: 600;
+  }
+
+  .summary p:last-child { margin-bottom: 0; }
+
+  h2 {
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    margin: 2.5rem 0 0.6rem;
+    padding-top: 0.2rem;
+  }
+
+  h2 .num {
+    display: inline-block;
+    min-width: 1.6rem;
+    color: var(--amber);
+    font-variant-numeric: tabular-nums;
+  }
+
+  p { margin: 0.8rem 0; }
+
+  ul { margin: 0.8rem 0; padding-left: 1.2rem; }
+  li { margin: 0.4rem 0; }
+
+  strong { font-weight: 600; }
+
+  a { color: var(--amber); }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--cream-deep);
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  [data-lang-block] { display: none; }
+  [data-lang-block].is-active { display: block; }
+
+  @media (max-width: 30rem) {
+    body { font-size: 16px; }
+    h1 { font-size: 1.6rem; }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #1B1712;
+      --cream-deep: #272119;
+      --amber: #E9A03B;
+      --amber-deep: #F2E7D3;
+      --ink: #F2E7D3;
+      --ink-soft: #B7A88F;
+    }
+    .lang { background: #272119; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="toolbar">
+      <span class="brand">Inveni Selfie</span>
+      <div class="lang" role="group" aria-label="Language / Idioma">
+        <button type="button" id="btn-pt" aria-pressed="true">Português</button>
+        <button type="button" id="btn-en" aria-pressed="false">English</button>
+      </div>
+    </div>
+
+    <div data-lang-block="pt" class="is-active">
+      <h1>Política de Privacidade</h1>
+      <p class="updated">Última atualização: 23 de julho de 2026</p>
+    </div>
+    <div data-lang-block="en">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: July 23, 2026</p>
+    </div>
+  </header>
+
+  <!-- ============ PORTUGUÊS ============ -->
+  <main data-lang-block="pt" class="is-active">
+
+    <div class="summary">
+      <p>Resumo em uma frase:</p>
+      <p>Suas fotos ficam no seu aparelho. Nós não temos servidor, não temos sua conta e não recebemos nenhuma das suas imagens.</p>
+    </div>
+
+    <h2><span class="num">1.</span> Quem somos</h2>
+    <p>O Inveni Selfie é um aplicativo gratuito, sem propaganda e sem cadastro, feito por um desenvolvedor independente sob o nome Inveni. Esta política explica exatamente o que acontece com os seus dados quando você usa o app.</p>
+
+    <h2><span class="num">2.</span> O que o app guarda</h2>
+    <p>Tudo o que o app guarda fica no armazenamento interno e privado do seu aparelho, em uma área que só este aplicativo pode acessar:</p>
+    <ul>
+      <li><strong>Suas fotos diárias</strong>, identificadas pela data em que foram tiradas ou atribuídas.</li>
+      <li><strong>Suas preferências</strong>: horário dos lembretes, se estão ligados, e outras opções do app.</li>
+      <li><strong>Posições dos olhos</strong> detectadas em cada foto, para não repetir esse cálculo a cada vídeo. São apenas coordenadas numéricas.</li>
+      <li><strong>Vídeos que você exporta</strong>, até que um novo seja gerado no lugar.</li>
+    </ul>
+
+    <h2><span class="num">3.</span> O que não coletamos</h2>
+    <p>Não coletamos nada. Sendo específico, o app <strong>não</strong> tem:</p>
+    <ul>
+      <li>Servidor próprio para onde suas fotos possam ser enviadas.</li>
+      <li>Conta, login ou cadastro de qualquer tipo.</li>
+      <li>Propaganda ou redes de anúncios.</li>
+      <li>Ferramentas de análise, rastreamento ou medição de uso.</li>
+      <li>Acesso à sua localização, contatos, microfone ou histórico.</li>
+    </ul>
+    <p>Nós não vendemos, alugamos nem compartilhamos seus dados com ninguém, porque não temos acesso a eles.</p>
+
+    <h2><span class="num">4.</span> Permissões que o app pede</h2>
+    <ul>
+      <li><strong>Câmera</strong> — necessária para tirar a foto do dia. As imagens são gravadas diretamente na área privada do app.</li>
+      <li><strong>Notificações</strong> — opcional. Pedida apenas se você ativar os lembretes, e pode ser recusada sem prejudicar o resto do app.</li>
+    </ul>
+    <p>Para importar fotos antigas, o app usa o seletor de imagens do próprio Android. Você escolhe uma foto específica e só ela é copiada. O app não pede nem recebe acesso à sua galeria.</p>
+
+    <h2><span class="num">5.</span> Detecção facial</h2>
+    <p>Para que o timelapse não fique tremido, o app localiza a posição dos seus olhos em cada foto e alinha as imagens umas com as outras.</p>
+    <p>Isso é feito com uma biblioteca do Google (ML Kit) que roda <strong>inteiramente dentro do seu aparelho, sem internet</strong>. Nenhuma imagem sai do celular nesse processo.</p>
+    <p>Uma distinção importante: o app faz <strong>detecção</strong>, não <strong>reconhecimento</strong>. Ele encontra onde estão os olhos em uma imagem. Ele não identifica quem é a pessoa, não cria assinatura biométrica, não compara rostos entre si e não teria como reconhecer você em outra foto.</p>
+
+    <h2><span class="num">6.</span> Vídeos que você exporta</h2>
+    <p>O vídeo do timelapse é montado dentro do próprio aparelho e salvo na área privada do app. Ele só sai dali se você tocar em compartilhar e escolher para onde enviar. Nesse momento, o app entrega o arquivo ao aplicativo que você escolheu, e o que acontece depois passa a ser regido pela política daquele aplicativo.</p>
+
+    <h2><span class="num">7.</span> Contribuição opcional</h2>
+    <p>O app é gratuito e continuará gratuito. Existe a possibilidade de deixar uma contribuição simbólica, que não desbloqueia nenhum recurso — você recebe apenas um agradecimento dentro do app.</p>
+    <p>Se você contribuir, o pagamento é processado inteiramente pelo Google Play. Nós não vemos, não recebemos e não guardamos seus dados de pagamento. O tratamento dessas informações segue a política de privacidade do Google.</p>
+
+    <h2><span class="num">8.</span> Apagar seus dados</h2>
+    <ul>
+      <li>Você pode apagar qualquer foto individualmente, dentro do app.</li>
+      <li>Você pode apagar todos os dados de uma vez em <em>Configurações do Android → Aplicativos → Inveni Selfie → Armazenamento → Limpar dados</em>.</li>
+      <li>Ao desinstalar o app, tudo o que ele guardava é removido junto pelo sistema.</li>
+    </ul>
+    <p>Como não temos servidor, não existe nenhuma cópia dos seus dados em nenhum outro lugar para ser solicitada ou apagada.</p>
+
+    <h2><span class="num">9.</span> Crianças</h2>
+    <p>O app não é direcionado a crianças menores de 13 anos e não coleta dados de ninguém, de qualquer idade. Se uma criança usar o app, as fotos ficam no aparelho como qualquer outra, sob responsabilidade de quem cuida do dispositivo.</p>
+
+    <h2><span class="num">10.</span> Alterações nesta política</h2>
+    <p>Se o app passar a fazer algo novo com seus dados, esta página será atualizada antes que a novidade chegue até você, e a data no topo mudará. Alterações relevantes também serão descritas nas notas da versão na Google Play.</p>
+
+    <h2><span class="num">11.</span> Contato</h2>
+    <p>Dúvidas sobre privacidade ou sobre o app: <a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></p>
+
+  </main>
+
+  <!-- ============ ENGLISH ============ -->
+  <main data-lang-block="en">
+
+    <div class="summary">
+      <p>The short version:</p>
+      <p>Your photos stay on your device. We have no server, we have no account for you, and we never receive any of your images.</p>
+    </div>
+
+    <h2><span class="num">1.</span> Who we are</h2>
+    <p>Inveni Selfie is a free app with no ads and no sign-up, made by an independent developer under the name Inveni. This policy explains exactly what happens to your data when you use the app.</p>
+
+    <h2><span class="num">2.</span> What the app stores</h2>
+    <p>Everything the app stores lives in your device's private internal storage, in an area only this app can reach:</p>
+    <ul>
+      <li><strong>Your daily photos</strong>, identified by the date they were taken or assigned to.</li>
+      <li><strong>Your preferences</strong>: reminder times, whether reminders are on, and other app options.</li>
+      <li><strong>Eye positions</strong> detected in each photo, so the app doesn't repeat that work every time you build a video. These are numeric coordinates only.</li>
+      <li><strong>Videos you export</strong>, until a new one replaces them.</li>
+    </ul>
+
+    <h2><span class="num">3.</span> What we don't collect</h2>
+    <p>We collect nothing. To be specific, the app has <strong>no</strong>:</p>
+    <ul>
+      <li>Server of our own that your photos could be sent to.</li>
+      <li>Account, login, or registration of any kind.</li>
+      <li>Advertising or ad networks.</li>
+      <li>Analytics, tracking, or usage measurement tools.</li>
+      <li>Access to your location, contacts, microphone, or history.</li>
+    </ul>
+    <p>We don't sell, rent, or share your data with anyone, because we have no access to it.</p>
+
+    <h2><span class="num">4.</span> Permissions the app asks for</h2>
+    <ul>
+      <li><strong>Camera</strong> — required to take your photo of the day. Images are written straight into the app's private area.</li>
+      <li><strong>Notifications</strong> — optional. Only requested if you turn reminders on, and you can decline without affecting the rest of the app.</li>
+    </ul>
+    <p>To import older photos, the app uses Android's own photo picker. You choose a specific photo and only that one is copied. The app never requests or receives access to your gallery.</p>
+
+    <h2><span class="num">5.</span> Face detection</h2>
+    <p>So your timelapse doesn't come out shaky, the app finds where your eyes are in each photo and lines the images up with each other.</p>
+    <p>This runs through a Google library (ML Kit) that works <strong>entirely on your device, with no internet</strong>. No image leaves your phone during this process.</p>
+    <p>An important distinction: the app performs <strong>detection</strong>, not <strong>recognition</strong>. It finds where eyes are in an image. It does not identify who the person is, does not create a biometric signature, does not compare faces to each other, and could not recognize you in another photo.</p>
+
+    <h2><span class="num">6.</span> Videos you export</h2>
+    <p>Your timelapse video is built on the device itself and saved to the app's private area. It only leaves that area if you tap share and pick where to send it. At that point the app hands the file to the app you chose, and what happens next is governed by that app's own policy.</p>
+
+    <h2><span class="num">7.</span> Optional contribution</h2>
+    <p>The app is free and will stay free. You may leave a small optional contribution, which unlocks no features — you simply get a thank-you inside the app.</p>
+    <p>If you do contribute, the payment is handled entirely by Google Play. We never see, receive, or store your payment details. That information is handled under Google's own privacy policy.</p>
+
+    <h2><span class="num">8.</span> Deleting your data</h2>
+    <ul>
+      <li>You can delete any individual photo from inside the app.</li>
+      <li>You can delete everything at once via <em>Android Settings → Apps → Inveni Selfie → Storage → Clear data</em>.</li>
+      <li>Uninstalling the app removes everything it stored, handled by the system.</li>
+    </ul>
+    <p>Since we run no server, there is no copy of your data anywhere else to request or erase.</p>
+
+    <h2><span class="num">9.</span> Children</h2>
+    <p>The app is not directed at children under 13, and it collects no data from anyone of any age. If a child uses the app, the photos stay on the device like any other, under the care of whoever manages that device.</p>
+
+    <h2><span class="num">10.</span> Changes to this policy</h2>
+    <p>If the app ever starts doing something new with your data, this page will be updated before that change reaches you, and the date at the top will change. Meaningful changes will also be described in the release notes on Google Play.</p>
+
+    <h2><span class="num">11.</span> Contact</h2>
+    <p>Questions about privacy or about the app: <a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></p>
+
+  </main>
+
+  <footer>
+    <span data-lang-block="pt" class="is-active">Inveni — apps pequenos, gratuitos e sem propaganda.</span>
+    <span data-lang-block="en">Inveni — small, free, ad-free apps.</span>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var btnPt = document.getElementById('btn-pt');
+    var btnEn = document.getElementById('btn-en');
+
+    function setLang(lang) {
+      document.documentElement.lang = (lang === 'pt') ? 'pt-BR' : 'en';
+
+      document.querySelectorAll('[data-lang-block]').forEach(function (el) {
+        el.classList.toggle('is-active', el.getAttribute('data-lang-block') === lang);
+      });
+
+      btnPt.setAttribute('aria-pressed', String(lang === 'pt'));
+      btnEn.setAttribute('aria-pressed', String(lang === 'en'));
+
+      var title = document.querySelector('title');
+      if (title) title.textContent = title.getAttribute('data-' + lang);
+
+      var desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.setAttribute('content', desc.getAttribute('data-' + lang));
+
+      try { localStorage.setItem('inveni-lang', lang); } catch (e) {}
+    }
+
+    btnPt.addEventListener('click', function () { setLang('pt'); });
+    btnEn.addEventListener('click', function () { setLang('en'); });
+
+    var saved = null;
+    try { saved = localStorage.getItem('inveni-lang'); } catch (e) {}
+
+    var browser = (navigator.language || 'en').toLowerCase();
+    setLang(saved || (browser.indexOf('pt') === 0 ? 'pt' : 'en'));
+  })();
+</script>
+</body>
+</html>
