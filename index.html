@@ -130,6 +130,13 @@
 
   strong { font-weight: 600; }
 
+  code {
+    background: var(--cream-deep);
+    padding: 0.1em 0.35em;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+
   a { color: var(--amber); }
 
   footer {
@@ -187,8 +194,8 @@
   <main data-lang-block="pt" class="is-active">
 
     <div class="summary">
-      <p>Resumo em uma frase:</p>
-      <p>Suas fotos ficam no seu aparelho. Nós não temos servidor, não temos sua conta e não recebemos nenhuma das suas imagens.</p>
+      <p>Resumo em duas frases:</p>
+      <p>Suas fotos ficam no seu aparelho. Nós não temos servidor, não temos sua conta e não recebemos nenhuma das suas imagens — nem quando você usa o backup, que vai direto para o seu próprio Google Drive.</p>
     </div>
 
     <h2><span class="num">1.</span> Quem somos</h2>
@@ -201,6 +208,7 @@
       <li><strong>Suas preferências</strong>: horário dos lembretes, se estão ligados, e outras opções do app.</li>
       <li><strong>Posições dos olhos</strong> detectadas em cada foto, para não repetir esse cálculo a cada vídeo. São apenas coordenadas numéricas.</li>
       <li><strong>Vídeos que você exporta</strong>, até que um novo seja gerado no lugar.</li>
+      <li><strong>Fotos apagadas</strong>, que ficam por até 30 dias em uma lixeira interna para que você possa recuperá-las, e depois são removidas automaticamente.</li>
     </ul>
 
     <h2><span class="num">3.</span> O que não coletamos</h2>
@@ -218,6 +226,7 @@
     <ul>
       <li><strong>Câmera</strong> — necessária para tirar a foto do dia. As imagens são gravadas diretamente na área privada do app.</li>
       <li><strong>Notificações</strong> — opcional. Pedida apenas se você ativar os lembretes, e pode ser recusada sem prejudicar o resto do app.</li>
+      <li><strong>Internet</strong> — usada exclusivamente pelo backup opcional descrito na seção 7. Se você nunca ativar o backup, o app funciona inteiro sem conexão.</li>
     </ul>
     <p>Para importar fotos antigas, o app usa o seletor de imagens do próprio Android. Você escolhe uma foto específica e só ela é copiada. O app não pede nem recebe acesso à sua galeria.</p>
 
@@ -229,26 +238,44 @@
     <h2><span class="num">6.</span> Vídeos que você exporta</h2>
     <p>O vídeo do timelapse é montado dentro do próprio aparelho e salvo na área privada do app. Ele só sai dali se você tocar em compartilhar e escolher para onde enviar. Nesse momento, o app entrega o arquivo ao aplicativo que você escolheu, e o que acontece depois passa a ser regido pela política daquele aplicativo.</p>
 
-    <h2><span class="num">7.</span> Contribuição opcional</h2>
+    <h2><span class="num">7.</span> Backup no Google Drive</h2>
+    <p>O app oferece um backup opcional das suas fotos no <strong>seu próprio Google Drive</strong>. Este é o único momento em que alguma foto sai do seu aparelho.</p>
+
+    <p><strong>É opcional e manual.</strong> O backup vem desligado. Nada é enviado até você abrir os Ajustes, autorizar o acesso e tocar em "Fazer backup agora". O app não envia nada sozinho, nem em segundo plano.</p>
+
+    <p><strong>Vai para a sua conta, não para a nossa.</strong> As fotos são gravadas em uma área privada do seu Drive reservada a este aplicativo. Nós não recebemos, não vemos e não guardamos cópia de nada. Não existe servidor nosso envolvido em nenhuma etapa.</p>
+
+    <p><strong>O acesso é limitado a essa pasta.</strong> O app solicita apenas a permissão <code>drive.appdata</code>, que dá acesso exclusivamente à área privada dele. O aplicativo não consegue ver, abrir, alterar nem apagar nenhum outro arquivo do seu Drive.</p>
+
+    <p><strong>Essa pasta é oculta.</strong> Por ser uma área reservada ao aplicativo, ela não aparece junto dos seus arquivos no Drive. Você pode conferir o espaço ocupado e excluir esses dados em <em>Google Drive → Configurações → Gerenciar apps</em>.</p>
+
+    <p><strong>Você pode revogar quando quiser.</strong> Em <em>Conta do Google → Segurança → Suas conexões com apps e serviços de terceiros</em>, você remove o acesso do app a qualquer momento. Isso interrompe novos backups; os arquivos já enviados continuam no seu Drive até que você os exclua.</p>
+
+    <p>Enquanto os arquivos estiverem no seu Drive, o armazenamento é feito pelo Google e regido pela política de privacidade e pelos termos do Google.</p>
+
+    <p>O uso das informações recebidas das APIs do Google por este aplicativo obedece à <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+    <h2><span class="num">8.</span> Contribuição opcional</h2>
     <p>O app é gratuito e continuará gratuito. Existe a possibilidade de deixar uma contribuição simbólica, que não desbloqueia nenhum recurso — você recebe apenas um agradecimento dentro do app.</p>
     <p>Se você contribuir, o pagamento é processado inteiramente pelo Google Play. Nós não vemos, não recebemos e não guardamos seus dados de pagamento. O tratamento dessas informações segue a política de privacidade do Google.</p>
 
-    <h2><span class="num">8.</span> Apagar seus dados</h2>
+    <h2><span class="num">9.</span> Apagar seus dados</h2>
     <ul>
-      <li>Você pode apagar qualquer foto individualmente, dentro do app.</li>
-      <li>Você pode apagar todos os dados de uma vez em <em>Configurações do Android → Aplicativos → Inveni Selfie → Armazenamento → Limpar dados</em>.</li>
-      <li>Ao desinstalar o app, tudo o que ele guardava é removido junto pelo sistema.</li>
+      <li>Você pode apagar qualquer foto individualmente, dentro do app. Ela fica recuperável por 30 dias e depois é removida automaticamente.</li>
+      <li>Você pode apagar todos os dados do aparelho de uma vez em <em>Configurações do Android → Aplicativos → Inveni Selfie → Armazenamento → Limpar dados</em>.</li>
+      <li>Ao desinstalar o app, tudo o que ele guardava no aparelho é removido junto pelo sistema.</li>
+      <li>Se você usou o backup, apagar uma foto no app <strong>não</strong> a remove do seu Drive — é justamente isso que permite restaurá-la depois. Para excluir o backup, use <em>Google Drive → Configurações → Gerenciar apps</em>.</li>
     </ul>
-    <p>Como não temos servidor, não existe nenhuma cópia dos seus dados em nenhum outro lugar para ser solicitada ou apagada.</p>
+    <p>Como não temos servidor, não existe nenhuma cópia dos seus dados sob nosso controle para ser solicitada ou apagada.</p>
 
-    <h2><span class="num">9.</span> Crianças</h2>
+    <h2><span class="num">10.</span> Crianças</h2>
     <p>O app não é direcionado a crianças menores de 13 anos e não coleta dados de ninguém, de qualquer idade. Se uma criança usar o app, as fotos ficam no aparelho como qualquer outra, sob responsabilidade de quem cuida do dispositivo.</p>
 
-    <h2><span class="num">10.</span> Alterações nesta política</h2>
+    <h2><span class="num">11.</span> Alterações nesta política</h2>
     <p>Se o app passar a fazer algo novo com seus dados, esta página será atualizada antes que a novidade chegue até você, e a data no topo mudará. Alterações relevantes também serão descritas nas notas da versão na Google Play.</p>
 
-    <h2><span class="num">11.</span> Contato</h2>
-    <p>Dúvidas sobre privacidade ou sobre o app: <a href="mailto:inveniapps@gmail.com">inveniapps@gmail.com</a></p>
+    <h2><span class="num">12.</span> Contato</h2>
+    <p>Dúvidas sobre privacidade ou sobre o app: <a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></p>
 
   </main>
 
@@ -257,7 +284,7 @@
 
     <div class="summary">
       <p>The short version:</p>
-      <p>Your photos stay on your device. We have no server, we have no account for you, and we never receive any of your images.</p>
+      <p>Your photos stay on your device. We have no server, we have no account for you, and we never receive any of your images — not even when you use backup, which goes straight to your own Google Drive.</p>
     </div>
 
     <h2><span class="num">1.</span> Who we are</h2>
@@ -270,6 +297,7 @@
       <li><strong>Your preferences</strong>: reminder times, whether reminders are on, and other app options.</li>
       <li><strong>Eye positions</strong> detected in each photo, so the app doesn't repeat that work every time you build a video. These are numeric coordinates only.</li>
       <li><strong>Videos you export</strong>, until a new one replaces them.</li>
+      <li><strong>Deleted photos</strong>, which stay in an internal trash for up to 30 days so you can get them back, then are removed automatically.</li>
     </ul>
 
     <h2><span class="num">3.</span> What we don't collect</h2>
@@ -287,6 +315,7 @@
     <ul>
       <li><strong>Camera</strong> — required to take your photo of the day. Images are written straight into the app's private area.</li>
       <li><strong>Notifications</strong> — optional. Only requested if you turn reminders on, and you can decline without affecting the rest of the app.</li>
+      <li><strong>Internet</strong> — used solely by the optional backup described in section 7. If you never turn backup on, the whole app works offline.</li>
     </ul>
     <p>To import older photos, the app uses Android's own photo picker. You choose a specific photo and only that one is copied. The app never requests or receives access to your gallery.</p>
 
@@ -298,26 +327,44 @@
     <h2><span class="num">6.</span> Videos you export</h2>
     <p>Your timelapse video is built on the device itself and saved to the app's private area. It only leaves that area if you tap share and pick where to send it. At that point the app hands the file to the app you chose, and what happens next is governed by that app's own policy.</p>
 
-    <h2><span class="num">7.</span> Optional contribution</h2>
+    <h2><span class="num">7.</span> Google Drive backup</h2>
+    <p>The app offers an optional backup of your photos to <strong>your own Google Drive</strong>. This is the only time any photo leaves your device.</p>
+
+    <p><strong>It is optional and manual.</strong> Backup ships turned off. Nothing is sent until you open Settings, grant access, and tap "Back up now". The app never uploads on its own or in the background.</p>
+
+    <p><strong>It goes to your account, not ours.</strong> Photos are written to a private area of your Drive reserved for this app. We do not receive, see, or keep a copy of anything. No server of ours is involved at any step.</p>
+
+    <p><strong>Access is limited to that folder.</strong> The app requests only the <code>drive.appdata</code> permission, which grants access exclusively to its own private area. The app cannot see, open, change, or delete any other file in your Drive.</p>
+
+    <p><strong>That folder is hidden.</strong> Because it is an app-reserved area, it does not appear among your files in Drive. You can check how much space it uses and delete that data under <em>Google Drive → Settings → Manage apps</em>.</p>
+
+    <p><strong>You can revoke access at any time.</strong> Under <em>Google Account → Security → Your connections to third-party apps and services</em>, you can remove the app's access whenever you want. That stops any future backups; files already uploaded stay in your Drive until you delete them.</p>
+
+    <p>While those files are in your Drive, storage is provided by Google and governed by Google's privacy policy and terms.</p>
+
+    <p>This app's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2><span class="num">8.</span> Optional contribution</h2>
     <p>The app is free and will stay free. You may leave a small optional contribution, which unlocks no features — you simply get a thank-you inside the app.</p>
     <p>If you do contribute, the payment is handled entirely by Google Play. We never see, receive, or store your payment details. That information is handled under Google's own privacy policy.</p>
 
-    <h2><span class="num">8.</span> Deleting your data</h2>
+    <h2><span class="num">9.</span> Deleting your data</h2>
     <ul>
-      <li>You can delete any individual photo from inside the app.</li>
-      <li>You can delete everything at once via <em>Android Settings → Apps → Inveni Selfie → Storage → Clear data</em>.</li>
-      <li>Uninstalling the app removes everything it stored, handled by the system.</li>
+      <li>You can delete any individual photo from inside the app. It stays recoverable for 30 days, then is removed automatically.</li>
+      <li>You can delete everything on the device at once via <em>Android Settings → Apps → Inveni Selfie → Storage → Clear data</em>.</li>
+      <li>Uninstalling the app removes everything it stored on the device, handled by the system.</li>
+      <li>If you used backup, deleting a photo in the app does <strong>not</strong> remove it from your Drive — that is exactly what lets you restore it later. To delete the backup, use <em>Google Drive → Settings → Manage apps</em>.</li>
     </ul>
-    <p>Since we run no server, there is no copy of your data anywhere else to request or erase.</p>
+    <p>Since we run no server, there is no copy of your data under our control to request or erase.</p>
 
-    <h2><span class="num">9.</span> Children</h2>
+    <h2><span class="num">10.</span> Children</h2>
     <p>The app is not directed at children under 13, and it collects no data from anyone of any age. If a child uses the app, the photos stay on the device like any other, under the care of whoever manages that device.</p>
 
-    <h2><span class="num">10.</span> Changes to this policy</h2>
+    <h2><span class="num">11.</span> Changes to this policy</h2>
     <p>If the app ever starts doing something new with your data, this page will be updated before that change reaches you, and the date at the top will change. Meaningful changes will also be described in the release notes on Google Play.</p>
 
-    <h2><span class="num">11.</span> Contact</h2>
-    <p>Questions about privacy or about the app: <a href="mailto:inveniapps@gmail.com">inveniapps@gmail.comm</a></p>
+    <h2><span class="num">12.</span> Contact</h2>
+    <p>Questions about privacy or about the app: <a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></p>
 
   </main>
 
